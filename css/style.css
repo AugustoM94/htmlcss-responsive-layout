@@ -66,9 +66,73 @@ body {
 .big-radius {
     border-radius: 20px;
 }
+.circle {
+    border-radius: 50%;
+}
 .line-height {
     line-height: 2em;
 }
+.button {
+     background-color: var(--color-light-color);
+     padding: 0 10px;
+     padding-bottom: 2px;
+     border-radius: 5px;
+   }
+.card {
+    padding: 20px;
+    border-radius: 10px;
+}
+.col {
+    padding: 30px;
+    margin: 20px;
+}
 img {
     width: 100%;
+    display: block;
 }
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+/* header */
+header {
+    background-color: #0084FD;
+    color: var(--color-light-color);
+}
+.box-logo img {
+    width: 80px;
+    padding: 15px;
+}
+.space-between {
+    display: flex;
+    justify-content: space-between;
+ } 
+ ul > li {
+    display: none;
+ }
+.fa-bars {
+    font-size: 1.5em;
+    padding: 15px;
+ }
+ /* Section Intro */
+ .button-secondary {
+    background-color: var(--color-secondary-color);
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 140px;
+    color: var(--color-light-color);
+  }
+  #intro .card {
+    background-color: var(--color-bg-card);
+    width: 100%;
+  }
+  .box-image img {
+    position: relative;
+    top: 20px;
+  }
+  #intro h3 {
+    color: var(--color-secondary-color);
+  }
