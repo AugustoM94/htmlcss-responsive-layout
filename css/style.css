@@ -4,7 +4,71 @@
     box-sizing: border-box;
 }
 
+:root {
+	--color-secondary-color: #0084FD;
+	--color-dark-color: #333333;
+	--color-light-color: #FFFFFF;
+	--color-primary-color: #9792E4;
+	--color-bg-card: #B5DDFF;
+	--color-contrast-color: #FCC060;
+	--color-text: #424242;
+}
 body {
     font-family: 'PT Sans Caption', sans-serif;
      font-family: 'PT Sans Narrow', sans-serif;
+}
+/* utility */
+.even-section {
+    background-color: var(--color-primary-color);
+}
+.bg-secondary {
+    background-color: var(--color-secondary-color);
+}
+.bg-primary {
+    background-color: var(--color-primary-color);
+}
+.bg-color-primary {
+    background-color: var(--color-primary-color);
+}
+.bg-color-secondary {
+    background-color: var(--color-secondary-color);
+}
+.txt-primary{
+    color: var(--color-primary-color);
+}
+.txt-color-txt {
+    color: var(--color-text);
+}
+.txt-free {
+    color: var(--color-contrast-color);
+}
+.pad-10-lr {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.pad-10-tb {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pad-20-lr {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.pad-20-tb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.small-radius {
+    border-radius: 10px;
+}
+.big-radius {
+    border-radius: 20px;
+}
+.line-height {
+    line-height: 2em;
+}
+img {
+    width: 100%;
 }
