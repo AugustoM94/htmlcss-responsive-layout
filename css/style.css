@@ -33,6 +33,9 @@ body {
 .bg-color-secondary {
     background-color: var(--color-secondary-color);
 }
+.bg-color-lightcolor {
+    background-color: var(--color-light-color);
+}
 .txt-primary{
     color: var(--color-primary-color);
 }
@@ -42,6 +45,9 @@ body {
 .txt-secondary {
     color: var(--color-secondary-color);
 }
+.txt-color-light {
+    color: var(--color-light-color);
+}
 .txt-free {
     color: var(--color-contrast-color);
 }
@@ -49,6 +55,9 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 
+}
+.txt-uppercase {
+    text-transform: uppercase;
 }
 .pad-10-tb {
     padding-top: 10px;
@@ -71,6 +80,10 @@ body {
 }
 .circle {
     border-radius: 50%;
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin: 20px 80px;
 }
 .line-height {
     line-height: 2em;
@@ -80,13 +93,23 @@ body {
      padding: 0 10px;
      padding-bottom: 2px;
      border-radius: 5px;
+     color: var(--color-dark-color);
+     display: block;
    }
 .card {
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
+    padding-bottom: 30px;
 }
 .col {
-    padding:10px 40px;
+    padding:10px 30px;
+    margin: 30px 0;
+}
+.col-free {
+    padding:10px 30px;
+}
+.card-content {
+    margin: 0 30px 0 30px;
 }
 img {
     width: 100%;
@@ -102,6 +125,33 @@ a {
 h3 {
     font-size: 1.5rem;
 }
+/* Flexbox Properties */
+.flex {
+    display: flex;
+}
+
+.justify-content-c {
+    justify-content: center;
+}
+
+.justify-content-sb {
+    justify-content: space-between;
+}
+
+.justify-content-sa {
+    justify-content: space-around;
+}
+
+.align-items-c {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+.wrap {
+    flex-wrap: wrap;
+}
 /* header */
 header {
     background-color: #0084FD;
@@ -109,7 +159,7 @@ header {
 }
 .box-logo img {
     width: 80px;
-    padding: 15px;
+    padding: 10px;
 }
 .space-between {
     display: flex;
@@ -120,8 +170,9 @@ header {
  }
 .fa-bars {
     font-size: 1.5em;
-    padding:15px 20px;
+    padding:10px 20px;
  }
+
  /* Section Intro */
  .button-secondary {
     background-color: var(--color-secondary-color);
@@ -134,9 +185,12 @@ header {
     background-color: var(--color-bg-card);
     width: 100%;
   }
+  #intro .fa-solid {
+    font-size: 3em;
+  }
   .box-image img {
     position: relative;
-    top: 20px;
+    top: 25px;
   }
   #intro h3 {
     color: var(--color-secondary-color);
@@ -145,6 +199,110 @@ header {
     font-size: 3em;
     padding: 10px;
   }
-.fa-solid {
-    font-size: 3em;
+
+
+/* Section Planning */
+#Planning{
+    background-color: var(--color-primary-color);
 }
+.card-content-plan {
+    padding: 0 30px;
+    background-color: var(--color-light-color);
+    border-radius: 20px;
+    margin: 0 30px 0 30px;
+}
+.circle-arrow {
+    background-color: var(--color-primary-color);
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px 0;
+    font-size:1.2em;
+}
+/* Section Testimonials */
+
+#Testimonials h2 {
+   color: var(--color-primary-color);
+}
+/* Section Benefits */
+#Benefits {
+    background-color: var(--color-primary-color);
+    padding: 30px 0;
+}
+#Benefits h2 {
+    font-size: 2em;
+}
+.card-content > span {
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+.button-bg-primary {
+    background-color: var(--color-primary-color);
+    padding: 5px 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: var(--color-light-color);
+    display: inline-block;
+  }
+  /* About Us */
+  #AboutUs h2 {
+       font-size: 3em;
+  }
+  /* Free */
+  #free {
+    background-color: var(--color-primary-color);
+  }
+  #free h3 {
+    color: lightgrey;
+  }
+  #free h2 {
+    font-size: 2em;
+  }
+  #free h1 {
+    font-size: 3em;
+  }
+  .button-bg-lightcolor {
+    background-color: var(--color-light-color);
+    border-radius: 20px;
+    padding: 10px 0;
+    margin-top: 30px;
+    color: var(--color-primary-color);
+    display: inline-block;
+    width: 200px;
+  }
+  small > a {
+    text-decoration: underline;
+  }
+  footer {
+    background-color: var(--color-text);
+    padding: 30px 20px;
+
+  }
+  footer a {
+    text-decoration: underline;
+    padding: 5px;
+  }
+  @media  screen  and (min-width: 576px){
+
+    #intro .col {
+        width: calc(100% / 3);
+    }
+    #intro .col:first-child{
+        width: calc((100% / 2) * 2);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    img {
+        max-width: 330px;
+    }
+    .d-flex {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    nav li {
+            display: block;
+            padding-left: 5px;
+        }
+        nav .fa-solid {
+            display: none;
+        }
+  }
